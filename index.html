@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Carry Me!</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Taviraj" rel="stylesheet">
+<script src="script.js"></script>
+</head>
+<body>
+<header>
+<h2>Carry Me!</h2>
+<nav>
+	<div class="navBar">
+	<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="about.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="contact.html">Contact</a>&nbsp;
+</div>
+</nav>
+</header>
+<main>
+
+
+<div class="portrait"><img class="delPortrait" src="final-delian.png"></div>
+<div class="aboutDelian">
+
+<p class="spanThing">This is Delian! She can carry a lot of heavy things.<br> Can she carry you? Use the form below to find out!</p>
+
+</div>
+
+<br>
+
+<!--Below is the form to enter the information-->
+	<div>
+		<button class="open-button" onclick="openForm()">Open Form</button>
+	<div class="form-popup" id="collection"> 
+	<form onsubmit="return false;" class="form-container" autocomplete="off">
+		<label>Name</label>
+		<input type="text" id="personName"><br>
+		<label>Your base weight (number only)</label>
+		<input id="personWeight"><br>
+		<label>Weight you're carrying (number only)</label>
+		<input id="carryWeight"><br>
+
+	<button type="submit" id="submittal" class="btn" onclick= nameVars()>Submit</button>
+	<input type="reset" class="btn reset">
+	<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+	</form>
+	</div>
+	</div>
+	<!--End form-->
+
+</main>
+<footer>
+<div class= "carryResult">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p id="result" class="spanThing"></p>
+</div>
+
+</footer>
+</body>
+</html>
