@@ -20,9 +20,9 @@ function nameVars(){
 	var personName=document.getElementById("personName").value;
 	var personWeight=document.getElementById("personWeight").value;
 	var carryWeight=document.getElementById("carryWeight").value;
-		if (((+carryWeight) + (+personWeight)) < delianCarry) {
+		if (((+carryWeight) + (+personWeight)) <= delianCarry) {
 			document.getElementById("result").innerHTML= (personName) + ", Delian can carry you!";
-		} else if ((carryWeight + personWeight) > delianCarry) {
+		} else if (((+carryWeight) + (+personWeight)) > delianCarry) {
 		 	document.getElementById("result").innerHTML= (personName) + ", Delian can't carry you :(";
 		 } else {
 		 	document.getElementById("result").innerHTML= "whoops :( Please enter a valid number!";
